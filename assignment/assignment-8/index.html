@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8</title>
+    </head>
+    <body>
+        <h1>Contact Support</h1>
+        <form>
+            <label for="ticket"> Ticket </label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                minlength="4"
+                maxlength="8"
+                size="10"
+            />
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" pattern="" size="30" required />
+
+            <legend>Select a Issue:</legend>
+
+            <div>
+                <input
+                    type="radio"
+                    id="technical issue"
+                    name="issue"
+                    value="technical issue"
+                    checked
+                />
+                <label for="technical issue">Technical issue</label>
+            </div>
+
+            <div>
+                <input type="radio" id="billing" name="issue" value="billing" />
+                <label for="billing">Billing</label>
+            </div>
+
+            <div>
+                <input
+                    type="radio"
+                    id="account management"
+                    name="issue"
+                    value="account management"
+                />
+                <label for="account management">Account Management</label>
+            </div>
+            <div>
+                <input type="radio" id="other" name="issue" value="other" />
+                <label for="other">Other</label>
+            </div>
+            <div>
+                <h2>Describe the Issue</h2>
+                <textarea id="issue" name="issue" rows="4" cols="50"></textarea>
+            </div>
+            <div>
+                <label for="screenshot">Choose a screenshot:</label>
+
+                <input
+                    type="file"
+                    id="screenshot"
+                    name="screenshot"
+                    accept="image/png, image/jpeg"
+                />
+                <div>
+                    <h2>Additional Info</h2>
+                    <textarea
+                        id="issue"
+                        name="issue"
+                        rows="4"
+                        cols="50"
+                    ></textarea>
+                </div>
+            </div>
+            <div>
+                <input type="button" value="Submit" />
+            </div>
+        </form>
+    </body>
+</html>
