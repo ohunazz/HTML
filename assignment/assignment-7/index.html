@@ -57,6 +57,36 @@
                 <label for="email">Enter your email:</label>
                 <input type="email" id="email" name="email" />
             </div>
+            <div class="address">
+                <label for="street-address">Your Street address</label>
+                <input type="text" id="street-address" name="street-address" autocomplete="street-address" required enterkeyhint="next"></input>
+              
+                <label for="postal-code">ZIP or postal code (optional)</label>
+                <input class="postal-code" id="postal-code" name="postal-code" autocomplete="postal-code" enterkeyhint="next"></input>
+              
+                <label for="city">City</label>
+                <input required type="text" id="city" name="city" autocomplete="address-level2" enterkeyhint="next"></input>
+              
+                <label for="country">Country or region</label>
+                <select id="country" name="country" autocomplete="country" autocomplete="country"  required></select>
+            </div>
+            <hr>
+             <h2>Make Appointment for ID Photo</h2>
+            
+             <div class="appointment">
+            
+                <label for="timeInput">Appoinment Time</label>
+                <input type="time" name="appoinmenttime" id="time" />
+                <label for="day">Appoinment Day</label>
+                <input type="week" name="appoinmentday" id="day" />
+                <label for="month">Appoinment Month</label>
+                <input type="month" name="appoinmentmonth" id="month" />
+            </div>
+
+            
+            
+            <button>Submit Application</button>
+            </div>
         </form>
     </body>
 </html>
