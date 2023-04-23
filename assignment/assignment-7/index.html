@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inputs</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 style="text-align: center; color: rgb(41, 39, 36)">
+            Start Your Application For NYC ID
+        </h1>
+        <div class="language">
+            <label for="language-picker-select">
+                <strong> Select your language </strong>
+            </label>
+
+            <select name="language-picker-select">
+                <option lang="de" value="deutsch">Deutsch</option>
+                <option lang="en" value="english" selected>English</option>
+                <option lang="fr" value="francais">Français</option>
+                <option lang="it" value="italiano">Italiano</option>
+            </select>
+        </div>
+
+        <div class="info">
+            <label for="FirstNameInput">First Name</label>
+            <input type="text" id="FirstNameInput" name="FirstNameInput" />
+            <label for="LastNameInput">Last Name</label>
+            <input type="text" id="LastNameInput" name="LastNameInput" />
+            <label for="dobInput">Birthdate</label>
+            <input
+                type="date"
+                name="dateofbirth"
+                id="dobInput"
+                min="1950-01-12"
+                max="2005-01-12"
+            />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" />
+        </div>
+        <div class="contact-info">
+            <label for="phone">Enter your phone number:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            />
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" />
+        </div>
+    </body>
+</html>

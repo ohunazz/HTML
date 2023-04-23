@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.language {
+    height: 100%;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    padding-left: 40px;
+}
+
+.info {
+    margin-bottom: 30px;
+    padding-left: 40px;
+    display: flex;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 60px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
