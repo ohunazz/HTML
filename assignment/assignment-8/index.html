@@ -9,50 +9,74 @@
     <body>
         <h1>Contact Support</h1>
         <form>
-            <label for="ticket"> Ticket </label>
-            <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                minlength="4"
-                maxlength="8"
-                size="10"
-            />
-            <label for="email">Enter your email:</label>
-            <input type="email" id="email" pattern="" size="30" required />
+            <div>
+                <label for="FirstNameInput">First Name</label>
+                <input type="text" id="FirstNameInput" name="FirstNameInput" />
+                <label for="LastNameInput">Last Name</label>
+                <input type="text" id="LastNameInput" name="LastNameInput" />
+            </div>
 
-            <legend>Select a Issue:</legend>
-
+            <div>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="emailinput" name="email" />
+            </div>
+            <legend>The Priority of the Issue:</legend>
             <div>
                 <input
                     type="radio"
-                    id="technical issue"
+                    id="lowIssueRadio"
                     name="issue"
-                    value="technical issue"
+                    value="low"
                     checked
                 />
-                <label for="technical issue">Technical issue</label>
-            </div>
-
-            <div>
-                <input type="radio" id="billing" name="issue" value="billing" />
-                <label for="billing">Billing</label>
+                <label for="lowIssue">Low</label>
             </div>
 
             <div>
                 <input
                     type="radio"
-                    id="account management"
+                    id="mediumIssueRadio"
                     name="issue"
-                    value="account management"
+                    value="Low"
                 />
-                <label for="account management">Account Management</label>
+                <label for="lowIssue">Medium</label>
             </div>
+
             <div>
-                <input type="radio" id="other" name="issue" value="other" />
-                <label for="other">Other</label>
+                <input
+                    type="radio"
+                    id="highIssueRadio"
+                    name="issue"
+                    value="hihg"
+                />
+                <label for="highIssue">High</label>
             </div>
+
+            <div>
+                <h2>The Issue Category</h2>
+                <label>
+                    <input
+                        type="radio"
+                        id="issueCategory"
+                        name="issue"
+                        value=""
+                    />
+                    Select an Issue
+                </label>
+                <select
+                    name="Technical Issue"
+                    id="TechnicalIssue"
+                    value=""
+                    onchange="radioCheck();"
+                >
+                    <option value="">Select</option>
+                    <option value="">Technical Issue</option>
+                    <option value="">Billing</option>
+                    <option value="">Account Management</option>
+                    <option value="">Other</option>
+                </select>
+            </div>
+
             <div>
                 <h2>Describe the Issue</h2>
                 <textarea id="issue" name="issue" rows="4" cols="50"></textarea>
