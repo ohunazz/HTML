@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inputs</title>
+    </head>
+    <body>
+        <h1>Basic Inputs</h1>
+        <label for="FirstNameInput">First Name</label>
+        <input type="text" id="FirstNameInput" name="FirstNameInput" />
+
+        <label for="LastNameInput">Last Name</label>
+        <input type="text" id="LastNameInput" name="LastNameInput" />
+
+        <label for="email">Enter your email:</label>
+        <input
+            type="email"
+            id="email"
+            pattern="example@gmail.com"
+            size="30"
+            required
+        />
+        <div>
+            <label for="carmodelsearch">Search Car Model:</label>
+            <input type="search" id="search" name="search" />
+            <button>Search</button>
+        </div>
+        <div>
+            <label for="phone">Enter your phone number:</label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+            />
+        </div>
+        <div>
+            <legend>Choose Transmission Type:</legend>
+            <input type="checkbox" id="Automatic" name="Automatic" checked />
+            <label for="Automatic">Automatic</label>
+            <input type="checkbox" id="Manual" name="Manual" />
+            <label for="Manual">Manual</label>
+        </div>
+        <p>Choose car color:</p>
+
+        <div>
+            <input
+                type="color"
+                id="Exterior"
+                name="Exterior"
+                value="color; black"
+            />
+            <label for="Exterior">Exterior</label>
+
+            <input type="color" id="Interior" name="Interior" value="" />
+            <label for="Interior">Interior</label>
+        </div>
+        <div>
+            <label for="Test Drive Date">Test Drive Date:</label>
+
+            <input
+                type="date"
+                id="start"
+                name="trip-start"
+                value="2023-04-22"
+                min="2012-01-01"
+                max="2031-12-31"
+            />
+        </div>
+
+        <p>Search range miles:</p>
+
+        <div>
+            <input type="range" id="miles" name="miles" min="0" max="400" />
+            <label for="miles">Miles</label>
+        </div>
+
+        <label for="submitInput"></label>
+        <input type="submit" id="submitInput" name="submitbutton" />
+    </body>
+</html>
