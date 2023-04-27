@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8</title>
+    </head>
+    <body>
+        <h1>Contact Support</h1>
+        <form>
+            <div>
+                <label for="firstNameInput">First Name</label>
+                <input type="text" id="firstNameInput" name="firstName" />
+                <label for="lastNameInput">Last Name</label>
+                <input type="text" id="lastNameInput" name="lastName" />
+            </div>
+
+            <div>
+                <label for="emailInput">Enter your email:</label>
+                <input type="email" id="emailInput" name="email" />
+            </div>
+            <legend>The Priority of the Issue:</legend>
+            <div>
+                <input
+                    type="radio"
+                    id="lowIssueRadio"
+                    name="issue"
+                    value="Low"
+                />
+                <label for="lowIssue">Low</label>
+            </div>
+
+            <div>
+                <input
+                    type="radio"
+                    id="mediumIssueRadio"
+                    name="issue"
+                    value="Low"
+                />
+                <label for="mediumIssueRadio">Medium</label>
+            </div>
+
+            <div>
+                <input
+                    type="radio"
+                    id="highIssueRadio"
+                    name="issue"
+                    value="High"
+                />
+                <label for="highIssueRadio">High</label>
+            </div>
+
+            <div>
+                <h2>The Issue Category</h2>
+                <label>
+                    <input type="radio" id="issueCategory" name="issue" />
+                    Select an Issue
+                </label>
+                <select name="technicalIssue" id="technicalIssue">
+                    <option value="">Select</option>
+                    <option value="">Technical Issue</option>
+                    <option value="">Billing</option>
+                    <option value="">Account Management</option>
+                    <option value="">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <h2>Describe the Issue</h2>
+                <textarea
+                    id="issueTextarea"
+                    name="issue"
+                    rows="4"
+                    cols="20"
+                ></textarea>
+            </div>
+            <div>
+                <label for="screenshotInput">Choose a screenshot:</label>
+
+                <input
+                    type="file"
+                    id="screenshotInput"
+                    name="screenshot"
+                    accept="image/png, image/jpeg"
+                />
+                <div>
+                    <h2>Additional Info</h2>
+                    <textarea
+                        id="issueTextarea"
+                        name="issue"
+                        rows="4"
+                        cols="20"
+                    ></textarea>
+                </div>
+            </div>
+            <div>
+                <input type="button" value="Submit" />
+            </div>
+        </form>
+    </body>
+</html>
