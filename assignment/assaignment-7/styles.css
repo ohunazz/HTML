@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Form Section */
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#form-section {
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.personal-information {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.account-details {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.preferences-favorite {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.attachments {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.location {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feedback {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.schedule {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.search {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 40px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.submit-reset {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.submit-reset input {
+    background-color: red;
+    color: white;
+    height: 60px;
+    width: 200px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.submit-reset button {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 60px;
+    width: 140px;
+    text-align: center;
+}
+
+.clickable-img {
+    display: flex;
+    margin-bottom: 20px;
+
+    gap: 80px;
+    font-size: 25px;
+}
+
+.clickable-img label {
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+    height: 40px;
+    width: 140px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.clickable-img input {
+    height: 100%;
+    width: 80px;
+}
