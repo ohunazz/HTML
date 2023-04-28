@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.3</title>
+    </head>
+    <body>
+        <form>
+            <h1>Application for a Job</h1>
+            <div>
+                <label for="fullNameInput">Full Name</label>
+                <input type="text" name="fullName" id="fullNameInput" />
+                <label for="phoneNumberInput">Phone number</label>
+                <input
+                    type="tel"
+                    id="phoneNumberInput"
+                    name="phoneNumber"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required
+                />
+
+                <label for="emailInput">Enter your email:</label>
+                <input type="email" id="emailInput" name="email" />
+            </div>
+            <br />
+            <div>
+                <label for="coverLatterTextarea"
+                    >Write a Cover Latter here</label
+                >
+                <textarea
+                    name="coverLatter"
+                    id="coverLatterTextarea"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+
+                <br />
+
+                <label for="fileInput">Upload Your Resume</label>
+                <input
+                    type="file"
+                    id="fileInput"
+                    name="uploadResume"
+                    accept="application/pdf"
+                />
+            </div>
+            <br />
+            <div>
+                <label for="highesteducationLevelSelect"
+                    >Your highest level of Education</label
+                >
+                <select
+                    name="highestLevelEducation"
+                    id="highesteducationLevelSelect"
+                >
+                    <option value="HighSchool">High School</option>
+                    <option value="BachelorDegree">Bachelor's Degree</option>
+                    <option value="MasterDegree">Master's Degree</option>
+                    <option value="DoctorPhilosophy">Ph.D.</option>
+                </select>
+            </div>
+            <br />
+            <div>
+                <label for="additionalInformation"
+                    >Additional Qualifications or Certifications</label
+                >
+                <textarea
+                    name="additionalQualificationsCertifications"
+                    id="additionalInformation"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+            </div>
+            <input type="button" value="Submit" />
+        </form>
+    </body>
+</html>
