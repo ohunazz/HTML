@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.2</title>
+    </head>
+    <body>
+        <form>
+            <h1>Simple Quiz</h1>
+            <div>
+                <label for="fullNameInput">Full Name</label>
+                <input type="text" name="fullName" id="fullNameInput" />
+
+                <label for="emailInput">Email</label>
+                <input type="email" name="email" id="emailInput" />
+            </div>
+            <div>
+                <label for="confidenceLevelInput"
+                    >Rate Your Confidence Level</label
+                >
+                <input
+                    type="range"
+                    name="confidenceLevel"
+                    id="confidenceLevelInput"
+                    min="1"
+                    max="10"
+                />
+                <label for="ageInput">Your Age</label>
+                <input
+                    type="number"
+                    name="age"
+                    id="ageInput"
+                    min="18"
+                    max="99"
+                />
+            </div>
+            <h2>Select your favorite quiz categories</h2>
+            <div>
+                <label for="historyInput">History</label>
+                <input
+                    type="checkbox"
+                    name="history"
+                    id="historyInput"
+                    value="History"
+                />
+                <label for="scienceInput">Science</label>
+                <input
+                    type="checkbox"
+                    name="science"
+                    id="scienceInput"
+                    value="Science"
+                />
+                <label for="sportInput">Sport</label>
+                <input
+                    type="checkbox"
+                    name="sport"
+                    id="sportInput"
+                    value="Sport"
+                />
+                <label for="literatureInput">Literature</label>
+                <input
+                    type="checkbox"
+                    name="literature"
+                    id="literatureInput"
+                    value="Literature"
+                />
+            </div>
+            <h2>Select your preferred quiz format</h2>
+            <div>
+                <label for="multipleChoiceRadioInput">Multiple Choice</label>
+                <input
+                    type="radio"
+                    name="selectQuizFormat"
+                    id="multipleChoiceRadioInput"
+                    value="Multiple Choice"
+                />
+                <label for="trueFalseRadioInput">True/False</label>
+                <input
+                    type="radio"
+                    name="selectQuizFormat"
+                    id="trueFalseRadioInput"
+                    value="True/False"
+                />
+                <label for="blankRadioInput">Fill in the Blank</label>
+                <input
+                    type="radio"
+                    name="selectQuizFormat"
+                    id="blankRadioInput"
+                    value="Fill the Blank"
+                />
+            </div>
+            <h2>Select your time zone</h2>
+            <div>
+                <label for="timeZoneSelect">US Time Zones</label>
+                <select name="timeZone" id="timeZoneSelect">
+                    <option value="Hawaii Standard Time">UTC -10</option>
+                    <option value="Hawaii-Aleutian Daylight Time">
+                        UTC -9
+                    </option>
+                    <option value="Alaska Daylight Time">UTC -8</option>
+                    <option value="Pacific Daylight Time">UTC -7</option>
+                    <option value="Mountain Standard Time">UTC -6</option>
+                    <option value="Mountain Daylight Time">UTC -6</option>
+                </select>
+            </div>
+            <h2>Feedback and Suggestions</h2>
+            <div>
+                <label for="feedbackSuggestionsTextarea"
+                    >Write Your Feedback and Suggestions here</label
+                >
+                <textarea
+                    name="feedbackSuggestions"
+                    id="feedbackSuggestionsTextarea"
+                    cols="20"
+                    rows="5"
+                ></textarea>
+            </div>
+
+            <input type="button" value="Submit" />
+        </form>
+    </body>
+</html>
