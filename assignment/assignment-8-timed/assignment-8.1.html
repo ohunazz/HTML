@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration for Newsletter</title>
+    </head>
+    <body>
+        <h1>Register for a Newsletter</h1>
+        <form id="registration">
+            <div>
+                <label for="fullNameInput">Full Name</label>
+                <input
+                    type="text"
+                    name="fullName"
+                    id="fullNameInput"
+                    required
+                />
+                <label for="ageInput">Your Age</label>
+                <input
+                    type="number"
+                    name="age"
+                    id="ageInput"
+                    min="15"
+                    max="99"
+                />
+                <label for="emailInput">Email</label>
+                <input type="email" name="email" id="emailInput" required />
+            </div>
+
+            <h2>Select your preferred Topics</h2>
+            <div>
+                <label for="sportsInput">The Sports</label>
+                <input type="checkbox" name="sports" id="sportsInput" />
+                <label for="technologyInput">The Technology</label>
+                <input type="checkbox" name="technology" id="technologyInput" />
+                <label for="travelInput">The Travel</label>
+                <input type="checkbox" name="travel" id="travelInput" />
+            </div>
+            <h2>Select How Often Should you Receive Newsletters</h2>
+            <div>
+                <label for="dailyInput">Daily</label>
+                <input
+                    type="radio"
+                    name="frequencyNewslatter"
+                    id="dailyInput"
+                    value="Day"
+                />
+                <label for="weeklyInput">Weekly</label>
+                <input
+                    type="radio"
+                    name="frequencyNewslatter"
+                    id="weeklyInput"
+                    value="Week"
+                />
+                <label for="monthlyInput">Monthly</label>
+                <input
+                    type="radio"
+                    name="frequencyNewslatter"
+                    id="monthlyInput"
+                    value="Month"
+                />
+            </div>
+            <h2>Select your Email Format</h2>
+            <div>
+                <label for="selectEmailFormat">Email Format</label>
+                <select name="emailFormat" id="selectEmailFormat">
+                    <option value="Html">HTML</option>
+                    <option value="Text">Plain Text</option>
+                </select>
+            </div>
+            <h2>Additional Comments and Suggestions</h2>
+            <div>
+                <label for="commentsSuggestionsInput"
+                    >Your Comments and Suggestions</label
+                >
+                <textarea
+                    name="commentsSuggestions"
+                    id="commentsSuggestionsInput"
+                    cols="20"
+                    rows="5"
+                ></textarea>
+            </div>
+
+            <input type="button" name="submitForm" value="Submit" />
+        </form>
+    </body>
+</html>
