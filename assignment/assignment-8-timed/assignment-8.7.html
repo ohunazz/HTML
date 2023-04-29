@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.7</title>
+    </head>
+    <body>
+        <h1>Photo Contest Entry</h1>
+        <form>
+            <label for="fullNameInput">Full Name</label>
+            <input type="text" name="fullName" id="fullNameInput" />
+            <label for="emailInput">Email</label>
+            <input type="email" name="email" id="emailInput" />
+            <br />
+            <br />
+
+            <label for="photoInput">Upload Your Photo:</label>
+            <input
+                type="file"
+                id="photoInput"
+                name="photo"
+                accept="image/*"
+                required
+            />
+            <br />
+            <br />
+
+            <label for="termsConditionsInput"
+                >I agree Terms and Conditions</label
+            >
+            <input
+                type="checkbox"
+                name="agreeTermsConditions"
+                id="termsConditionsInput"
+            />
+
+            <br />
+            <br />
+
+            <label for="countrySelect">Select your Country</label>
+            <select name="country" id="countrySelect">
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Australia">Australia</option>
+            </select>
+
+            <br />
+            <br />
+
+            <label for="photoDescriptionTextarea"
+                >Write your Photo Description or Story here</label
+            >
+            <textarea
+                name="descriptionStory"
+                id="photoDescriptionTextarea"
+                cols="30"
+                rows="10"
+            ></textarea>
+            <br />
+            <br />
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
