@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.4</title>
+    </head>
+    <body>
+        <h1>Customer Feedback Surveys</h1>
+        <form>
+            <div>
+                <label for="fullNameInput">Full Name</label>
+                <input type="text" name="fullName" id="fullNameInput" />
+
+                <h2>Rate your overall experience</h2>
+                <label for="excellentExperianceInput">Excellent</label>
+                <input
+                    type="radio"
+                    name="overallExperiance"
+                    id="excellentExperianceInput"
+                    value="Excellent"
+                />
+
+                <label for="goodEperienceInput">Good</label>
+                <input
+                    type="radio"
+                    name="overallExperiance"
+                    id="goodEperienceInput"
+                    value="Good"
+                />
+
+                <label for="averageExperianceInput">Average</label>
+                <input
+                    type="radio"
+                    name="overallExperiance"
+                    id="averageExperianceInput"
+                    value="Average"
+                />
+
+                <label for="poorExperianceInput">Poor</label>
+                <input
+                    type="radio"
+                    name="overallExperiance"
+                    id="poorExperianceInput"
+                    value="Poor"
+                />
+                <label for="veryPoorExperianceInput">Very Poor</label>
+                <input
+                    type="radio"
+                    name="overallExperiance"
+                    id="veryPoorExperianceInput"
+                    value="VeryPoor"
+                />
+            </div>
+            <br />
+            <div>
+                <label for="additionalCommentsTextarea"
+                    >Additional comments regarding your experience</label
+                >
+                <textarea
+                    name="additionalComments"
+                    id="additionalCommentsTextarea"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+                <br />
+                <br />
+                <label for="phoneNumberInput">Enter Phone Number</label>
+                <input type="tel" name="phoneNumber" id="phoneNumberInput" />
+                <label for="preferredContactMethod "
+                    >Select Your preferred Contact Method</label
+                >
+                <select>
+                    <option value="Phone">Phone</option>
+                    <option value="Email">Email</option>
+                </select>
+            </div>
+
+            <br />
+
+            <div>
+                <label for="otherSuggestionsTextarea"
+                    >Write your other suggestions or feedback</label
+                >
+                <textarea
+                    name="suggestionsFeedback"
+                    id="otherSuggestionsTextarea"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+            </div>
+            <br />
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
