@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    color: black;
+    border: 1px solid;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+}
+
+li {
+    margin-left: 80px;
+    font-size: 20px;
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(251, 246, 240);
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol {
+    list-style: none;
+}
+
+p {
+    margin-bottom: 20px;
+    color: rgb(74, 7, 137);
+}
