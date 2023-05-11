@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th,
+td {
+    border: 1px solid black;
+
+    text-align: center;
+}
+th {
+    background-color: #d5dbc0;
+}
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
